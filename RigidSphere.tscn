@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -9,6 +9,12 @@ radius = 0.2
 radius = 0.2
 height = 0.4
 
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.188235, 0.188235, 0.192157, 1 )
+metallic = 0.7
+metallic_specular = 1.0
+roughness = 0.0
+
 [node name="RigidSphere" type="RigidBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.62378, 0 )
 physics_material_override = SubResource( 1 )
@@ -18,5 +24,5 @@ shape = SubResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = SubResource( 3 )
-material/0 = null
+material/0 = SubResource( 4 )
 
