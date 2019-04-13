@@ -51,3 +51,8 @@ shape = SubResource( 8 )
 mesh = SubResource( 9 )
 material/0 = null
 
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.40711, 0 )
+extents = Vector3( 5, 5, 5 )
+enable_shadows = true
+
